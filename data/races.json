@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Example Half Marathon",
+    "distance": "13.1 mi",
+    "date": "2025-10-12",
+    "location": "Chicago, IL",
+    "time": "1:52:31",
+    "pace": "8:35 /mi",
+    "notes": "PR! Negative split the back half.",
+    "result": "pr",
+    "photos": [
+      "images/races/demo-1.svg",
+      "images/races/demo-2.svg"
+    ]
+  },
+  {
+    "name": "Turkey Trot 10K",
+    "distance": "6.2 mi",
+    "date": "2024-11-28",
+    "location": "Louisville, KY",
+    "time": "49:14",
+    "pace": "7:56 /mi",
+    "notes": "Cold morning, felt strong.",
+    "result": "finished",
+    "photosUrl": "https://photos.google.com/"
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "updated": null,
+  "trainingBlock": {
+    "since": "2026-06-01",
+    "miles": 0,
+    "runs": 0,
+    "movingHours": 0,
+    "elevationFt": 0,
+    "longestRunMiles": 0
+  },
+  "lifetime": {
+    "miles": 0,
+    "runs": 0
+  },
+  "recentRuns": []
+}

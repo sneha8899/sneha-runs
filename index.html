@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sneha Runs — Road to Berlin</title>
+  <meta name="description" content="Marathon training log on the road to the BMW Berlin Marathon." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏃‍♀️</text></svg>" />
+</head>
+<body>
+  <!-- ===== HERO ===== -->
+  <header class="hero">
+    <div class="hero__inner">
+      <p class="hero__kicker" id="kicker">Marathon Training Log</p>
+      <h1 class="hero__title">SNEHA<span class="hero__title-accent">RUNS</span></h1>
+      <p class="hero__tagline" id="tagline">Chasing 26.2.</p>
+
+      <div class="countdown" id="countdown" aria-live="polite">
+        <div class="countdown__unit"><span class="countdown__num" data-cd="days">--</span><span class="countdown__label">Days</span></div>
+        <div class="countdown__sep">:</div>
+        <div class="countdown__unit"><span class="countdown__num" data-cd="hours">--</span><span class="countdown__label">Hrs</span></div>
+        <div class="countdown__sep">:</div>
+        <div class="countdown__unit"><span class="countdown__num" data-cd="mins">--</span><span class="countdown__label">Min</span></div>
+        <div class="countdown__sep">:</div>
+        <div class="countdown__unit"><span class="countdown__num" data-cd="secs">--</span><span class="countdown__label">Sec</span></div>
+      </div>
+      <p class="countdown__caption" id="countdown-caption">until the gun goes off</p>
+    </div>
+    <div class="hero__scroll" aria-hidden="true">↓</div>
+  </header>
+
+  <main>
+    <!-- ===== RACE-DAY TRACKING ===== -->
+    <section class="section" id="tracking" hidden>
+      <div class="section__head">
+        <h2 class="section__title">Follow Me Live</h2>
+        <p class="section__sub">Cheer me on from anywhere on race day</p>
+      </div>
+      <div class="tracking" id="tracking-list"></div>
+    </section>
+
+    <!-- ===== MILEAGE STATS ===== -->
+    <section class="section" id="mileage">
+      <div class="section__head">
+        <h2 class="section__title">The Numbers</h2>
+        <p class="section__sub" id="updated-note">Auto-synced from Strava</p>
+      </div>
+
+      <div class="stats-grid">
+        <div class="statcard statcard--hero">
+          <p class="statcard__label" id="block-label">This Training Block</p>
+          <p class="statcard__value"><span class="count" data-count="0" data-decimals="1" id="block-miles">0</span><span class="statcard__unit">mi</span></p>
+          <div class="progress">
+            <div class="progress__bar" id="goal-bar"></div>
+          </div>
+          <p class="progress__text" id="goal-text">0 / 0 mi goal</p>
+        </div>
+
+        <div class="statcard">
+          <p class="statcard__label">Lifetime Miles</p>
+          <p class="statcard__value"><span class="count" data-count="0" data-decimals="0" id="life-miles">0</span></p>
+        </div>
+
+        <div class="statcard">
+          <p class="statcard__label">Block Runs</p>
+          <p class="statcard__value"><span class="count" data-count="0" data-decimals="0" id="block-runs">0</span></p>
+        </div>
+
+        <div class="statcard">
+          <p class="statcard__label">Longest Run</p>
+          <p class="statcard__value"><span class="count" data-count="0" data-decimals="1" id="block-long">0</span><span class="statcard__unit">mi</span></p>
+        </div>
+
+        <div class="statcard">
+          <p class="statcard__label">Elevation</p>
+          <p class="statcard__value"><span class="count" data-count="0" data-decimals="0" id="block-elev">0</span><span class="statcard__unit">ft</span></p>
+        </div>
+
+        <div class="statcard">
+          <p class="statcard__label">Hours Moving</p>
+          <p class="statcard__value"><span class="count" data-count="0" data-decimals="0" id="block-hours">0</span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== RECENT RUNS ===== -->
+    <section class="section" id="recent">
+      <div class="section__head">
+        <h2 class="section__title">Latest Runs</h2>
+        <p class="section__sub">Fresh off the watch</p>
+      </div>
+      <div class="runs" id="runs-list">
+        <p class="empty">No runs synced yet.</p>
+      </div>
+    </section>
+
+    <!-- ===== RACES ===== -->
+    <section class="section" id="races">
+      <div class="section__head">
+        <h2 class="section__title">Race Résumé</h2>
+        <p class="section__sub">Where the bibs have taken me</p>
+      </div>
+      <div class="races" id="races-list">
+        <p class="empty">No races logged yet.</p>
+      </div>
+    </section>
+
+    <!-- ===== SHOES ===== -->
+    <section class="section" id="shoes">
+      <div class="section__head">
+        <h2 class="section__title">Shoe Hall of Fame</h2>
+        <p class="section__sub">The soles that did the work</p>
+      </div>
+      <div class="shoes" id="shoes-list">
+        <p class="empty">No shoes in the HOF yet.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Built with 🏃‍♀️ &amp; ☕ · Data via <a href="https://www.strava.com" target="_blank" rel="noopener">Strava</a> · Hosted on GitHub Pages</p>
+    <p class="footer__updated" id="footer-updated"></p>
+  </footer>
+
+  <!-- ===== PHOTO LIGHTBOX ===== -->
+  <div class="lightbox" id="lightbox" hidden aria-hidden="true" role="dialog" aria-modal="true" aria-label="Race photos">
+    <button class="lightbox__close" id="lb-close" aria-label="Close">&times;</button>
+    <button class="lightbox__nav lightbox__nav--prev" id="lb-prev" aria-label="Previous photo">&#8249;</button>
+    <figure class="lightbox__figure">
+      <img class="lightbox__img" id="lb-img" src="" alt="" />
+      <figcaption class="lightbox__caption"><span id="lb-title"></span><span id="lb-count" class="lightbox__count"></span></figcaption>
+    </figure>
+    <button class="lightbox__nav lightbox__nav--next" id="lb-next" aria-label="Next photo">&#8250;</button>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

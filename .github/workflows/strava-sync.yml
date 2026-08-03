@@ -1,0 +1,41 @@
+name: Sync Strava stats
+
+on:
+  schedule:
+    # Runs daily at 06:00 UTC. Adjust the cron as you like.
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write         # needed to commit the updated stats.json
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Fetch Strava data
+        env:
+          STRAVA_CLIENT_ID: ${{ secrets.STRAVA_CLIENT_ID }}
+          STRAVA_CLIENT_SECRET: ${{ secrets.STRAVA_CLIENT_SECRET }}
+          STRAVA_REFRESH_TOKEN: ${{ secrets.STRAVA_REFRESH_TOKEN }}
+        run: node scripts/sync-strava.mjs
+
+      - name: Commit updated stats
+        run: |
+          git config user.name "strava-sync-bot"
+          git config user.email "actions@github.com"
+          if git diff --quiet data/stats.json; then
+            echo "No changes to stats.json."
+          else
+            git add data/stats.json
+            git commit -m "chore: sync Strava stats [skip ci]"
+            git push
+          fi

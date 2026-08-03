@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Nike Vaporfly 3",
+    "role": "Race day",
+    "color": "Volt / Black",
+    "miles": 84,
+    "retired": false,
+    "notes": "Saving these for Berlin. Feels like cheating (legally).",
+    "emoji": "🟡"
+  },
+  {
+    "name": "Saucony Endorphin Speed 4",
+    "role": "Workouts & tempo",
+    "color": "Blue Raspberry",
+    "miles": 212,
+    "retired": false,
+    "notes": "The do-everything shoe of this block.",
+    "emoji": "🔵"
+  },
+  {
+    "name": "Hoka Clifton 9",
+    "role": "Easy miles",
+    "color": "Cloudless / Evening Sky",
+    "miles": 468,
+    "retired": true,
+    "notes": "Carried me through base building. Officially retired to the closet HOF.",
+    "emoji": "⭐"
+  }
+]
