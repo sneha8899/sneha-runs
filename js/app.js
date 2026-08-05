@@ -1,5 +1,3 @@
-/* Sneha Runs — front-end logic. Pure vanilla JS, no build step. */
-
 const $ = (sel, ctx = document) => ctx.querySelector(sel);
 const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
 
@@ -14,7 +12,6 @@ async function loadJSON(path, fallback) {
   }
 }
 
-/* ---------- Countdown ---------- */
 function startCountdown(raceISO, caption) {
   const target = new Date(raceISO).getTime();
   const els = {
@@ -47,7 +44,6 @@ function startCountdown(raceISO, caption) {
   if (caption && capEl) capEl.textContent = caption;
 }
 
-/* ---------- Count-up animation ---------- */
 function animateCount(el, target, decimals = 0, dur = 1200) {
   const start = performance.now();
   const from = 0;
@@ -88,6 +84,15 @@ function renderStats(stats, config) {
     blockLabel.textContent = config.trainingBlockLabel;
   }
 
+  // Manual "cries" stat (lives in config.json so the Strava sync can't overwrite it)
+  if (typeof config.cries === "number") {
+    const card = $("#cries-card");
+    if (card) {
+      card.hidden = false;
+      setCount("cries-count", config.cries, 0);
+    }
+  }
+
   // Goal progress bar
   const goal = config.goalMiles || 0;
   const miles = tb.miles || 0;
@@ -116,15 +121,30 @@ function renderStats(stats, config) {
 }
 
 /* ---------- Render: recent runs ---------- */
-function renderRuns(runs) {
+function renderRuns(runs, profileUrl) {
   const wrap = $("#runs-list");
   if (!wrap) return;
+
+  // "View all on Strava" link in the header
+  const profileLink = $("#strava-profile-link");
+  if (profileLink && profileUrl) {
+    profileLink.href = profileUrl;
+    profileLink.hidden = false;
+  }
+
   if (!runs || !runs.length) return; // keep the empty placeholder
   wrap.innerHTML = "";
   runs.forEach((r) => {
     const d = parseDate(r.date);
-    const el = document.createElement("div");
-    el.className = "run reveal";
+    const href = r.url || (r.id ? `https://www.strava.com/activities/${r.id}` : null);
+    const el = document.createElement(href ? "a" : "div");
+    el.className = `run reveal${href ? " run--link" : ""}`;
+    if (href) {
+      el.href = href;
+      el.target = "_blank";
+      el.rel = "noopener";
+      el.title = "View on Strava";
+    }
     el.innerHTML = `
       <div class="run__date">
         <b>${d.getDate()}</b>
@@ -242,8 +262,8 @@ function renderShoes(shoes) {
   if (!shoes || !shoes.length) return;
   wrap.innerHTML = "";
   shoes.forEach((s) => {
-    const miles = Number(s.miles || 0);
-    const life = 500; // typical shoe lifespan for the wear meter
+    const miles = Number(s.miles) ?  Number(s.miles) : null;
+    const life = 400;
     const pct = Math.min((miles / life) * 100, 100);
     const el = document.createElement("div");
     el.className = `shoe reveal${s.retired ? " shoe--retired" : ""}`;
@@ -254,7 +274,7 @@ function renderShoes(shoes) {
       </div>
       <div class="shoe__name">${escapeHTML(s.name || "")}</div>
       <div class="shoe__color">${escapeHTML(s.color || "")}</div>
-      <div class="shoe__miles">${miles.toLocaleString()}<span> mi</span></div>
+      <div class="shoe__miles">${miles === null ? escapeHTML("♾️") : miles.toLocaleString()}<span> mi</span></div>
       <div class="shoe__meter"><div style="width:${pct}%"></div></div>
       ${s.notes ? `<div class="shoe__notes">${escapeHTML(s.notes)}</div>` : ""}
       ${s.retired ? `<div class="shoe__retired-tag">Retired</div>` : ""}
@@ -262,6 +282,55 @@ function renderShoes(shoes) {
     wrap.appendChild(el);
   });
   observeReveals();
+}
+
+/* ---------- Render: wishlist ---------- */
+function renderWishlist(items) {
+  const section = $("#wishlist");
+  const wrap = $("#wishlist-list");
+  if (!section || !wrap) return;
+  if (!Array.isArray(items) || !items.length) return; // stays hidden
+
+  section.hidden = false;
+  wrap.innerHTML = "";
+  items.forEach((it) => {
+    const el = document.createElement("div");
+    el.className = "wish reveal";
+    const hasUrl = typeof it.url === "string" && it.url.trim() !== "";
+    const btn = hasUrl
+      ? `<a class="wish__btn" href="${encodeURI(it.url)}" target="_blank" rel="noopener">Gift this →</a>`
+      : `<span class="wish__btn wish__btn--soon">Link coming soon</span>`;
+    el.innerHTML = `
+      <div class="wish__top">
+        <span class="wish__emoji">${escapeHTML(it.emoji || "🎁")}</span>
+        ${it.price ? `<span class="wish__price">${escapeHTML(it.price)}</span>` : ""}
+      </div>
+      <div class="wish__name">${escapeHTML(it.name || "")}</div>
+      ${it.note ? `<div class="wish__note">${escapeHTML(it.note)}</div>` : ""}
+      ${btn}
+    `;
+    wrap.appendChild(el);
+  });
+  observeReveals();
+}
+
+/* ---------- Render: social links ---------- */
+function renderSocial(social) {
+  const nav = $("#social-links");
+  if (!nav || !social) return;
+  const map = { instagram: "#social-ig", tiktok: "#social-tt" };
+  let anyShown = false;
+  Object.entries(map).forEach(([key, sel]) => {
+    const link = $(sel);
+    const url = social[key];
+    const valid = typeof url === "string" && /^https?:\/\//.test(url) && !/YOUR_HANDLE/.test(url);
+    if (link && valid) {
+      link.href = url;
+      link.hidden = false;
+      anyShown = true;
+    }
+  });
+  nav.hidden = !anyShown;
 }
 
 /* ---------- Reveal-on-scroll ---------- */
@@ -283,7 +352,6 @@ function observeReveals() {
   $$(".reveal:not(.in)").forEach((el) => revealObserver.observe(el));
 }
 
-/* ---------- Count-up trigger on scroll ---------- */
 function observeCounts() {
   const io = new IntersectionObserver(
     (entries) => {
@@ -300,7 +368,6 @@ function observeCounts() {
   $$(".count").forEach((el) => io.observe(el));
 }
 
-/* ---------- Lightbox ---------- */
 const lb = {
   photos: [],
   index: 0,
@@ -390,11 +457,12 @@ function escapeHTML(str) {
 
 /* ---------- boot ---------- */
 (async function init() {
-  const [config, stats, races, shoes] = await Promise.all([
+  const [config, stats, races, shoes, wishlist] = await Promise.all([
     loadJSON("data/config.json", {}),
     loadJSON("data/stats.json", { trainingBlock: {}, lifetime: {}, recentRuns: [] }),
     loadJSON("data/races.json", []),
     loadJSON("data/shoes.json", []),
+    loadJSON("data/wishlist.json", []),
   ]);
 
   // hero text from config
@@ -407,9 +475,11 @@ function escapeHTML(str) {
   initLightbox();
   renderTracking(config.tracking);
   renderStats(stats, config);
-  renderRuns(stats.recentRuns);
+  renderRuns(stats.recentRuns, stats.profileUrl);
   renderRaces(races);
   renderShoes(shoes);
+  renderWishlist(wishlist);
+  renderSocial(config.social);
 
   observeCounts();
   observeReveals();

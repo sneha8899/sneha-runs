@@ -38,7 +38,7 @@ Strava needs a one-time authorization to issue a long-lived refresh token with r
 
 **a.** Open this URL in your browser (replace `YOUR_CLIENT_ID`):
 ```
-https://www.strava.com/oauth/authorize?client_id=YOUR_CLIENT_ID&response_type=code&redirect_uri=http://localhost/exchange_token&approval_prompt=force&scope=activity:read_all
+https://www.strava.com/oauth/authorize?client_id=<client-id>>&response_type=code&redirect_uri=http://localhost/exchange_token&approval_prompt=force&scope=activity:read_all
 ```
 Click **Authorize**. Your browser will redirect to a `localhost` page that fails to load — that's fine.
 Copy the `code=...` value from the address bar (it's between `code=` and `&scope`).
@@ -46,9 +46,9 @@ Copy the `code=...` value from the address bar (it's between `code=` and `&scope
 **b.** Exchange that code for tokens (replace all three placeholders):
 ```bash
 curl -X POST https://www.strava.com/oauth/token \
-  -d client_id=YOUR_CLIENT_ID \
-  -d client_secret=YOUR_CLIENT_SECRET \
-  -d code=THE_CODE_FROM_STEP_A \
+  -d client_id=<client-id> \
+  -d client_secret=<client-secret> \
+  -d code=<code-from-step1> \
   -d grant_type=authorization_code
 ```
 The JSON response includes a **`refresh_token`** — copy it. (The access token expires; the refresh token is what we store.)
@@ -64,7 +64,7 @@ In your repo: **Settings → Secrets and variables → Actions → New repositor
 
 ### 4. Turn on GitHub Pages
 **Settings → Pages → Build and deployment → Source: Deploy from a branch → Branch: `main` / `(root)`.**
-Your site will be live at `https://<your-username>.github.io/sneha-runs/`.
+Your site will be live at `https://sneha8899.github.io/sneha-runs/`.
 
 ### 5. Run the sync once
 Go to the **Actions** tab → **Sync Strava stats** → **Run workflow**. This fills in `data/stats.json`

@@ -2,16 +2,16 @@ name: Sync Strava stats
 
 on:
   schedule:
-    # Runs daily at 06:00 UTC. Adjust the cron as you like.
     - cron: "0 6 * * *"
   workflow_dispatch:
 
 permissions:
-  contents: write         # needed to commit the updated stats.json
+  contents: write
 
 jobs:
   sync:
     runs-on: ubuntu-latest
+    environment: deploy
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -36,6 +36,6 @@ jobs:
             echo "No changes to stats.json."
           else
             git add data/stats.json
-            git commit -m "chore: sync Strava stats [skip ci]"
+            git commit -m "sync strava stats"
             git push
           fi

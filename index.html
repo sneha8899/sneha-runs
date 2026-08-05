@@ -37,7 +37,7 @@
     <!-- ===== RACE-DAY TRACKING ===== -->
     <section class="section" id="tracking" hidden>
       <div class="section__head">
-        <h2 class="section__title">Follow Me Live</h2>
+        <h2 class="section__title">Can't make it to Germany? Follow Me Live!</h2>
         <p class="section__sub">Cheer me on from anywhere on race day</p>
       </div>
       <div class="tracking" id="tracking-list"></div>
@@ -84,6 +84,12 @@
           <p class="statcard__label">Hours Moving</p>
           <p class="statcard__value"><span class="count" data-count="0" data-decimals="0" id="block-hours">0</span></p>
         </div>
+
+        <div class="statcard statcard--fun" id="cries-card" hidden>
+          <p class="statcard__label">Cries 😭</p>
+          <p class="statcard__value"><span class="count" data-count="0" data-decimals="0" id="cries-count">0</span></p>
+          <p class="statcard__sub-note">mid &amp; pre run crashouts</p>
+        </div>
       </div>
     </section>
 
@@ -91,7 +97,7 @@
     <section class="section" id="recent">
       <div class="section__head">
         <h2 class="section__title">Latest Runs</h2>
-        <p class="section__sub">Fresh off the watch</p>
+        <p class="section__sub">Fresh off the watch · <a class="strava-link" id="strava-profile-link" href="#" target="_blank" rel="noopener" hidden>View all on Strava ↗</a></p>
       </div>
       <div class="runs" id="runs-list">
         <p class="empty">No runs synced yet.</p>
@@ -119,9 +125,32 @@
         <p class="empty">No shoes in the HOF yet.</p>
       </div>
     </section>
+
+    <!-- ===== WISHLIST ===== -->
+    <section class="section" id="wishlist" hidden>
+      <div class="section__head">
+        <h2 class="section__title">Want to Support Me?</h2>
+        <p class="section__sub">Marathon training adds up — if you'd like to fuel a mile, here's my wishlist 💛</p>
+      </div>
+      <div class="wishlist" id="wishlist-list"></div>
+    </section>
   </main>
 
   <footer class="footer">
+    <nav class="social" id="social-links" aria-label="Social links" hidden>
+      <a class="social__link" id="social-ig" href="#" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram" hidden>
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="2" y="2" width="20" height="20" rx="5.5"/>
+          <circle cx="12" cy="12" r="4.2"/>
+          <circle cx="17.4" cy="6.6" r="1.2" fill="currentColor" stroke="none"/>
+        </svg>
+      </a>
+      <a class="social__link" id="social-tt" href="#" target="_blank" rel="noopener" aria-label="TikTok" title="TikTok" hidden>
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true">
+          <path d="M16.6 3h-2.7v12.3a2.6 2.6 0 1 1-2.2-2.6v-2.7a5.3 5.3 0 1 0 4.9 5.3V8.9a6.6 6.6 0 0 0 3.9 1.3V7.4a3.9 3.9 0 0 1-3.8-4.4z"/>
+        </svg>
+      </a>
+    </nav>
     <p>Built with 🏃‍♀️ &amp; ☕ · Data via <a href="https://www.strava.com" target="_blank" rel="noopener">Strava</a> · Hosted on GitHub Pages</p>
     <p class="footer__updated" id="footer-updated"></p>
   </footer>

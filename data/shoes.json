@@ -1,17 +1,26 @@
 [
   {
-    "name": "Nike Vaporfly 3",
+    "name": "Hoka Clifton 11",
     "role": "Race day",
     "color": "Volt / Black",
     "miles": 84,
     "retired": false,
-    "notes": "Saving these for Berlin. Feels like cheating (legally).",
+    "notes": "New shoes for Berlin.",
     "emoji": "🟡"
   },
   {
-    "name": "Saucony Endorphin Speed 4",
+    "name": "Hoka Bondi",
     "role": "Workouts & tempo",
-    "color": "Blue Raspberry",
+    "color": "Druzy Droplet",
+    "miles": 212,
+    "retired": false,
+    "notes": "The do-everything shoe of this block.",
+    "emoji": "🔵"
+  },
+  {
+    "name": "Saucony Triumph",
+    "role": "Workouts & tempo",
+    "color": "Druzy Droplet",
     "miles": 212,
     "retired": false,
     "notes": "The do-everything shoe of this block.",
@@ -19,11 +28,38 @@
   },
   {
     "name": "Hoka Clifton 9",
-    "role": "Easy miles",
+    "role": "Race Day Reliable",
     "color": "Cloudless / Evening Sky",
-    "miles": 468,
+    "miles": 378,
     "retired": true,
-    "notes": "Carried me through base building. Officially retired to the closet HOF.",
+    "notes": "First ever marathon shoes. Officially retired to the closet HOF.",
     "emoji": "⭐"
+  },
+  {
+    "name": "Saucony Endorphin",
+    "role": "Race Day Reliable",
+    "color": "Cloudless / Evening Sky",
+    "miles": 378,
+    "retired": true,
+    "notes": "First ever marathon shoes. Officially retired to the closet HOF.",
+    "emoji": "⭐"
+  },
+  {
+    "name": "Brooks",
+    "role": "Race Day Reliable",
+    "color": "Cloudless / Evening Sky",
+    "miles": 378,
+    "retired": true,
+    "notes": "First ever marathon shoes. Officially retired to the closet HOF.",
+    "emoji": "⭐"
+  },
+  {
+    "name": "Asics",
+    "role": "My very first running shoe",
+    "color": "Cloudless / Evening Sky",
+    "miles": null,
+    "retired": true,
+    "notes": "",
+    "emoji": "🥺"
   }
 ]

@@ -1,27 +1,117 @@
 [
   {
-    "name": "Example Half Marathon",
-    "distance": "13.1 mi",
+    "name": "Kentucky Derby Festival Marathon",
+    "distance": "26.2 mi",
     "date": "2025-10-12",
-    "location": "Chicago, IL",
+    "location": "Louisville, KY",
     "time": "1:52:31",
     "pace": "8:35 /mi",
     "notes": "PR! Negative split the back half.",
-    "result": "pr",
+    "result": "finished",
     "photos": [
       "images/races/demo-1.svg",
       "images/races/demo-2.svg"
     ]
   },
   {
-    "name": "Turkey Trot 10K",
+    "name": "U of L 10 miler",
+    "distance": "3.1 mi",
+    "date": "2024-11-28",
+    "location": "Durham, North Carolina",
+    "time": "49:14",
+    "pace": "7:56 /mi",
+    "notes": "Cold morning, felt strong.",
+    "result": "finished",
+    "photosUrl": ""
+  },
+  {
+    "name": "Derby City 10K",
     "distance": "6.2 mi",
+    "date": "2024-11-28",
+    "location": "Durham, North Carolina",
+    "time": "49:14",
+    "pace": "7:56 /mi",
+    "notes": "Cold morning, felt strong.",
+    "result": "finished"
+  },
+  {
+    "name": "Whiskey Row 5K",
+    "distance": "3.1 mi",
+    "date": "2024-11-28",
+    "location": "Durham, North Carolina",
+    "time": "49:14",
+    "pace": "7:56 /mi",
+    "notes": "Cold morning, felt strong.",
+    "result": "finished"
+  },
+  {
+    "name": "Turkey Trot 5K",
+    "distance": "3.1 mi",
+    "date": "2024-11-28",
+    "location": "Durham, North Carolina",
+    "time": "49:14",
+    "pace": "7:56 /mi",
+    "notes": "Cold morning, felt strong.",
+    "result": "finished"
+  },
+  {
+    "name": "Urban Bourbon",
+    "distance": "13.1 mi",
     "date": "2024-11-28",
     "location": "Louisville, KY",
     "time": "49:14",
     "pace": "7:56 /mi",
     "notes": "Cold morning, felt strong.",
-    "result": "finished",
-    "photosUrl": "https://photos.google.com/"
+    "result": "finished"
+  },
+  {
+    "name": "Whiskey Row 5K",
+    "distance": "13.1 mi",
+    "date": "2024-11-28",
+    "location": "Louisville, KY",
+    "time": "49:14",
+    "pace": "7:56 /mi",
+    "notes": "Cold morning, felt strong.",
+    "result": "finished"
+  },
+  {
+    "name": "Philadelphia Marathon",
+    "distance": "26.2 mi",
+    "date": "2024-11-28",
+    "location": "Philadelphia, PA",
+    "time": "4:54:58",
+    "pace": "8:35 /mi",
+    "notes": "Cold morning, felt strong.",
+    "result": "PR"
+  },
+  {
+    "name": "Bourbon Chase",
+    "distance": "200 mi",
+    "date": "2024-11-28",
+    "location": "Philadelphia, PA",
+    "time": "4:54:58",
+    "pace": "8:35 /mi",
+    "notes": "200 Mile Relay Across Kentucky. Ran 4 legs totaling ~20 miles.",
+    "result": "finished"
+  },
+  {
+    "name": "Columbus Nationwide Childrens Half Marathon",
+    "distance": "13.1 mi",
+    "date": "2024-11-28",
+    "location": "Columbus, OH",
+    "time": "1:59:55",
+    "pace": "8:35 /mi",
+    "notes": "200 Mile Relay Across Kentucky. Ran 4 legs totaling ~20 miles.",
+    "result": "finished"
+  },
+  {
+    "name": "Capital City Half Marathon",
+    "distance": "13.1 mi",
+    "date": "2024-11-28",
+    "location": "Columbus, OH",
+    "time": "4:54:58",
+    "pace": "8:35 /mi",
+    "notes": "First half marathon! (During Covid so the course was a little bit 'DIY'",
+    "result": "finished"
   }
 ]

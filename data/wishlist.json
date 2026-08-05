@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Race-Day Super Shoes",
+    "price": "$260",
+    "note": "Carbon-plated shoes to chase a Berlin PR.",
+    "url": "",
+    "emoji": "👟"
+  },
+  {
+    "name": "Gel & Fuel Stash",
+    "price": "$45",
+    "note": "Long-run nutrition — keeps me upright past mile 18.",
+    "url": "",
+    "emoji": "🥤"
+  },
+  {
+    "name": "Recovery Massage Gun",
+    "price": "$99",
+    "note": "For the legs after those 20-milers.",
+    "url": "",
+    "emoji": "💆‍♀️"
+  },
+  {
+    "name": "Fuel a Mile ☕",
+    "price": "Any amount",
+    "note": "Coffee, socks, a post-run bagel — every bit helps get me to the start line.",
+    "url": "",
+    "emoji": "💛"
+  }
+]

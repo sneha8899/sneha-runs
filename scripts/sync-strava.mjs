@@ -111,6 +111,7 @@ async function main() {
 
   const out = {
     updated: new Date().toISOString(),
+    profileUrl: `https://www.strava.com/athletes/${me.id}`,
     trainingBlock: {
       since: config.trainingBlockStart,
       miles: round1(blockMeters / META_PER_MILE),
@@ -129,6 +130,7 @@ async function main() {
       miles: round1(a.distance / META_PER_MILE),
       time: formatDuration(a.moving_time),
       pace: formatPace(a.moving_time, a.distance),
+      url: `https://www.strava.com/activities/${a.id}`,
     })),
   };
 
