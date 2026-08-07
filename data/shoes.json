@@ -1,65 +1,74 @@
 [
   {
     "name": "Hoka Clifton 11",
-    "role": "Race day",
-    "color": "Volt / Black",
-    "miles": 84,
+    "role": "Race day & Workouts",
+    "color": "Frost / Glimmering Blue",
+    "miles": 41.6,
     "retired": false,
-    "notes": "New shoes for Berlin.",
-    "emoji": "🟡"
+    "notes": "New shoes for Berlin & the new favorites!",
+    "emoji": "🐆"
   },
   {
     "name": "Hoka Bondi",
-    "role": "Workouts & tempo",
+    "role": "Easy Runs",
     "color": "Druzy Droplet",
-    "miles": 212,
+    "miles": 138.1,
     "retired": false,
-    "notes": "The do-everything shoe of this block.",
-    "emoji": "🔵"
+    "notes": "Probably the prettiest running shoes I've owned. Think the drop might be a little too much for me though.",
+    "emoji": "🩵"
   },
   {
     "name": "Saucony Triumph",
-    "role": "Workouts & tempo",
-    "color": "Druzy Droplet",
-    "miles": 212,
+    "role": "A little bit the everything shoe",
+    "color": "Mineral/Berry",
+    "miles": 440.6,
+    "retired": true,
+    "notes": "",
+    "emoji": ""
+  },
+  {
+    "name": "La Sportiva x Janji",
+    "role": "Trail Runners",
+    "color": "",
+    "miles": 12.5,
     "retired": false,
-    "notes": "The do-everything shoe of this block.",
-    "emoji": "🔵"
+    "notes": "",
+    "emoji": ""
   },
   {
     "name": "Hoka Clifton 9",
     "role": "Race Day Reliable",
-    "color": "Cloudless / Evening Sky",
-    "miles": 378,
+    "color": "Citrus Glow Sunlit Ocean",
+    "miles": 407,
     "retired": true,
-    "notes": "First ever marathon shoes. Officially retired to the closet HOF.",
-    "emoji": "⭐"
+    "notes": "First ever marathon shoes. Officially retired (about to be recycled 😭)",
+    "emoji": "✨💛"
   },
   {
     "name": "Saucony Endorphin",
     "role": "Race Day Reliable",
-    "color": "Cloudless / Evening Sky",
-    "miles": 378,
+    "color": "Black",
+    "miles": null,
     "retired": true,
-    "notes": "First ever marathon shoes. Officially retired to the closet HOF.",
-    "emoji": "⭐"
+    "notes": "",
+    "emoji": ""
   },
   {
     "name": "Brooks",
-    "role": "Race Day Reliable",
-    "color": "Cloudless / Evening Sky",
-    "miles": 378,
+    "role": "",
+    "color": "",
+    "miles": null,
     "retired": true,
-    "notes": "First ever marathon shoes. Officially retired to the closet HOF.",
-    "emoji": "⭐"
+    "notes": "",
+    "emoji": ""
   },
   {
     "name": "Asics",
     "role": "My very first running shoe",
-    "color": "Cloudless / Evening Sky",
+    "color": "",
     "miles": null,
     "retired": true,
     "notes": "",
-    "emoji": "🥺"
+    "emoji": ""
   }
 ]
