@@ -1,30 +1,4 @@
-# sneha-runs 🏃‍♀️
-
-A personal marathon-training site on the road to the **BMW Berlin Marathon** (Sept 27, 2026).
-Static site hosted on **GitHub Pages**, with mileage **auto-synced from Strava** via a scheduled GitHub Action.
-
-## Sections
-- **Countdown** to race day
-- **Follow Me Live** — race-day tracking links (`data/config.json` → `tracking`)
-- **The Numbers** — training-block miles, lifetime miles, longest run, elevation, hours (auto-synced from Strava)
-- **Latest Runs** — your 5 most recent runs
-- **Race Résumé** — previous races, with clickable photo galleries (`data/races.json`)
-- **Shoe Hall of Fame** — your rotation (`data/shoes.json`)
-
----
-
-## How the Strava sync works
-
-GitHub Pages can only serve static files — it can't safely hold API secrets. So instead of the browser
-talking to Strava, a **GitHub Action** runs on a schedule (daily), fetches your data using secrets stored in
-GitHub, and commits the result to `data/stats.json`. The site just reads that JSON file. Your secrets never
-touch the public site.
-
-```
-GitHub Action (daily) ──▶ Strava API ──▶ writes data/stats.json ──▶ committed to repo ──▶ site reads it
-```
-
----
+# sneha-runs
 
 ## One-time setup
 
@@ -66,28 +40,12 @@ In your repo: **Settings → Secrets and variables → Actions → New repositor
 **Settings → Pages → Build and deployment → Source: Deploy from a branch → Branch: `main` / `(root)`.**
 Your site will be live at `https://sneha8899.github.io/sneha-runs/`.
 
-### 5. Run the sync once
-Go to the **Actions** tab → **Sync Strava stats** → **Run workflow**. This fills in `data/stats.json`
-for the first time. After that it runs automatically every day (and you can trigger it any time).
-
 > **Test the sync locally (optional):**
 > ```bash
 > STRAVA_CLIENT_ID=... STRAVA_CLIENT_SECRET=... STRAVA_REFRESH_TOKEN=... node scripts/sync-strava.mjs
 > ```
 
----
-
-## Editing your content
-
-All content lives in plain JSON files under `data/` — edit them in the GitHub web UI or locally and commit.
-
-- **`data/config.json`** — your name, race name/date, training-block start date, mileage goal, tagline.
-  - `raceDate` drives the countdown (ISO 8601, e.g. `"2026-09-27T09:15:00+02:00"`).
-  - `trainingBlockStart` also controls which runs count toward "This Training Block".
-  - `goalMiles` sets the progress bar target.
-- **`data/races.json`** — array of past races. Set `"result": "pr"` to get the gold ★ PR badge. Add photos two ways (see below).
-- **`data/shoes.json`** — array of shoes. Set `"retired": true` to move a shoe to the retired look.
-- **`data/stats.json`** — **auto-generated, don't edit by hand** (the Action overwrites it).
+## Misc Editing Notes
 
 ### Race-day live tracking (`config.json` → `tracking`)
 Each entry is one race you want spectators to follow. Until you flip it on, the card shows a
@@ -129,8 +87,3 @@ No build step. Just serve the folder:
 python3 -m http.server 8000
 # then open http://localhost:8000
 ```
-
-## Notes
-- If your **Garmin** already syncs to Strava (very common), those runs flow in automatically — no separate Garmin setup needed.
-- Only activities of type `Run` / `TrailRun` / `VirtualRun` are counted.
-- Adjust the sync schedule in `.github/workflows/strava-sync.yml` (the `cron` line).
