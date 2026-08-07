@@ -1,5 +1,7 @@
 # sneha-runs
 
+https://sneha8899.github.io/sneha-runs/
+
 ## One-time setup
 
 ### 1. Create a Strava API application
@@ -35,10 +37,6 @@ In your repo: **Settings → Secrets and variables → Actions → New repositor
 | `STRAVA_CLIENT_ID` | your Client ID |
 | `STRAVA_CLIENT_SECRET` | your Client Secret |
 | `STRAVA_REFRESH_TOKEN` | the refresh token from step 2b |
-
-### 4. Turn on GitHub Pages
-**Settings → Pages → Build and deployment → Source: Deploy from a branch → Branch: `main` / `(root)`.**
-Your site will be live at `https://sneha8899.github.io/sneha-runs/`.
 
 > **Test the sync locally (optional):**
 > ```bash
