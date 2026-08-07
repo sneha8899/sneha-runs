@@ -67,7 +67,6 @@ function setCount(id, value, decimals) {
   el.dataset.decimals = decimals;
 }
 
-/* ---------- Render: stats ---------- */
 function renderStats(stats, config) {
   const tb = stats.trainingBlock || {};
   const lt = stats.lifetime || {};
@@ -84,7 +83,6 @@ function renderStats(stats, config) {
     blockLabel.textContent = config.trainingBlockLabel;
   }
 
-  // Manual "cries" stat (lives in config.json so the Strava sync can't overwrite it)
   if (typeof config.cries === "number") {
     const card = $("#cries-card");
     if (card) {
@@ -120,7 +118,6 @@ function renderStats(stats, config) {
   }
 }
 
-/* ---------- Render: recent runs ---------- */
 function renderRuns(runs, profileUrl) {
   const wrap = $("#runs-list");
   if (!wrap) return;
@@ -161,7 +158,6 @@ function renderRuns(runs, profileUrl) {
   observeReveals();
 }
 
-/* ---------- Render: race-day tracking ---------- */
 function renderTracking(tracking) {
   const section = $("#tracking");
   const wrap = $("#tracking-list");
@@ -204,7 +200,6 @@ function renderTracking(tracking) {
   observeReveals();
 }
 
-/* ---------- Render: races ---------- */
 function renderRaces(races) {
   const wrap = $("#races-list");
   if (!wrap) return;
@@ -255,7 +250,6 @@ function renderRaces(races) {
   observeReveals();
 }
 
-/* ---------- Render: shoes ---------- */
 function renderShoes(shoes) {
   const wrap = $("#shoes-list");
   if (!wrap) return;
@@ -284,7 +278,6 @@ function renderShoes(shoes) {
   observeReveals();
 }
 
-/* ---------- Render: wishlist ---------- */
 function renderWishlist(items) {
   const section = $("#wishlist");
   const wrap = $("#wishlist-list");
@@ -314,11 +307,10 @@ function renderWishlist(items) {
   observeReveals();
 }
 
-/* ---------- Render: social links ---------- */
 function renderSocial(social) {
   const nav = $("#social-links");
   if (!nav || !social) return;
-  const map = { instagram: "#social-ig", tiktok: "#social-tt" };
+  const map = { instagram: "#social-ig", tiktok: "#social-tt", strava: "#social-s" };
   let anyShown = false;
   Object.entries(map).forEach(([key, sel]) => {
     const link = $(sel);
@@ -333,7 +325,7 @@ function renderSocial(social) {
   nav.hidden = !anyShown;
 }
 
-/* ---------- Reveal-on-scroll ---------- */
+
 let revealObserver;
 function observeReveals() {
   if (!revealObserver) {
@@ -455,7 +447,6 @@ function escapeHTML(str) {
   }[c]));
 }
 
-/* ---------- boot ---------- */
 (async function init() {
   const [config, stats, races, shoes, wishlist] = await Promise.all([
     loadJSON("data/config.json", {}),
@@ -465,7 +456,6 @@ function escapeHTML(str) {
     loadJSON("data/wishlist.json", []),
   ]);
 
-  // hero text from config
   if (config.raceName) $("#kicker").textContent = `Road to ${config.raceShortName || config.raceName}`;
   if (config.tagline) $("#tagline").textContent = config.tagline;
   document.title = `${config.runnerName || "Sneha"} Runs — Road to ${config.raceShortName || "Berlin"}`;

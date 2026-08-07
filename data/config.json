@@ -6,12 +6,13 @@
   "raceDate": "2026-09-27T09:15:00+02:00",
   "trainingBlockStart": "2026-04-26",
   "trainingBlockLabel": "Berlin Build",
-  "goalMiles": 500,
+  "goalMiles": 400,
   "cries": 7,
   "tagline": "26.2 through the streets of Berlin.",
   "social": {
     "instagram": "https://instagram.com/sneharunsamarathon",
-    "tiktok": "https://tiktok.com/@sne.srini"
+    "tiktok": "https://tiktok.com/@sne.srini",
+    "strava": "https://www.strava.com/athletes/92078275"
   },
   "tracking": [
     {
@@ -21,7 +22,7 @@
       "available": false,
       "bib": "",
       "url": "",
-      "note": "Live GPS tracking goes live on race morning. My bib number and the follow link drop closer to the day — check back to cheer me on in real time."
+      "note": "Live GPS tracking goes live on race morning. Will share my bib number and the follow link as soon as I know!"
     }
   ]
 }

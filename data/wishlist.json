@@ -1,30 +1,44 @@
 [
   {
-    "name": "Race-Day Super Shoes",
-    "price": "$260",
-    "note": "Carbon-plated shoes to chase a Berlin PR.",
-    "url": "",
-    "emoji": "👟"
+    "name": "Mestari Run 2.0 HiVo Size 7",
+    "price": "$185",
+    "note": "The logo is a bear",
+    "url": "https://us.karhu.com/products/karhu-womens-mestari-run-2-0-hivo-raindrops-marlin?_pos=7&_fid=3da571046&_ss=c&variant=44820428816575",
+    "emoji": "🐻"
   },
   {
-    "name": "Gel & Fuel Stash",
-    "price": "$45",
-    "note": "Long-run nutrition — keeps me upright past mile 18.",
-    "url": "",
-    "emoji": "🥤"
+    "name": "Gels!",
+    "price": "$40",
+    "note": "Snacc",
+    "url": "https://thefeed.com/products/ucan-edge?variant=39789356843071&queryID=c299691a7fd6dfe70da430b91ac243f7",
+    "emoji": "🍓🍌"
   },
   {
-    "name": "Recovery Massage Gun",
-    "price": "$99",
-    "note": "For the legs after those 20-milers.",
-    "url": "",
+    "name": "Electrolyes",
+    "price": "$40",
+    "note": "I've actually never had these but I've only heard good things.",
+    "url": "https://thefeed.com/products/tailwind-endurance-fuel?variant=43066936524863&queryID=52dd94ff52e57ce883a03b6cf09ff0de",
+    "emoji": "🧃"
+  },
+  {
+    "name": "Theragun",
+    "price": "$?",
+    "note": "There are many options and all of them look wonderful",
+    "url": "https://www.therabody.com/collections/shop-theragun?utm_a=181759851345&gad_source=1&gad_campaignid=22785609513&gclid=CjwKCAjwvsvTBhBaEiwAmf-3nmFo9sGzP5VOFA7JE3JgTl4bHThtrxeZa975IWs_HpLA8qPLdvNFaBoC2ScQAvD_BwE",
     "emoji": "💆‍♀️"
+  },
+  {
+    "name": "Normatec Recovery Boots",
+    "price": "$?",
+    "note": "The legs need love",
+    "url": "https://hyperice.com/products/normatec-3-legs",
+    "emoji": "❤️‍🩹"
   },
   {
     "name": "Fuel a Mile ☕",
     "price": "Any amount",
-    "note": "Coffee, socks, a post-run bagel — every bit helps get me to the start line.",
-    "url": "",
-    "emoji": "💛"
+    "note": "Coffee, socks, a post-run snacc — every bit helps get me to the start (& hopefully finish!) line.",
+    "url": "https://account.venmo.com/u/sneha8899",
+    "emoji": "🩵"
   }
 ]
