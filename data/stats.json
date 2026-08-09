@@ -1,19 +1,35 @@
 {
-  "updated": "2026-08-08T06:33:47.663Z",
+  "updated": "2026-08-09T06:37:05.940Z",
   "profileUrl": "https://www.strava.com/athletes/92078275",
   "trainingBlock": {
     "since": "2026-04-26",
-    "miles": 245.7,
-    "runs": 48,
-    "movingHours": 51,
-    "elevationFt": 5699,
+    "miles": 252.8,
+    "runs": 50,
+    "movingHours": 52,
+    "elevationFt": 5741,
     "longestRunMiles": 14.8
   },
   "lifetime": {
-    "miles": 1041,
-    "runs": 241
+    "miles": 1048,
+    "runs": 243
   },
   "recentRuns": [
+    {
+      "name": "Birthday Part 2 (Treadmill Workout)",
+      "date": "2026-08-08T22:36:20Z",
+      "miles": 3.8,
+      "time": "37:35",
+      "pace": "9:53 /mi",
+      "url": "https://www.strava.com/activities/19660810976"
+    },
+    {
+      "name": "Birthday  (Part 1)!",
+      "date": "2026-08-08T17:33:32Z",
+      "miles": 3.3,
+      "time": "36:32",
+      "pace": "11:13 /mi",
+      "url": "https://www.strava.com/activities/19660405834"
+    },
     {
       "name": "Long Run Part 2: Treadmill Torture",
       "date": "2026-08-06T03:46:00Z",
@@ -37,22 +53,6 @@
       "time": "46:58",
       "pace": "11:43 /mi",
       "url": "https://www.strava.com/activities/19606478968"
-    },
-    {
-      "name": "What doesn’t melt you makes you stronger",
-      "date": "2026-08-01T19:23:03Z",
-      "miles": 13.5,
-      "time": "2:55:16",
-      "pace": "12:59 /mi",
-      "url": "https://www.strava.com/activities/19563973534"
-    },
-    {
-      "name": "Pretty Lakeside Run",
-      "date": "2026-07-30T20:14:30Z",
-      "miles": 3,
-      "time": "36:36",
-      "pace": "12:10 /mi",
-      "url": "https://www.strava.com/activities/19536920412"
     }
   ]
 }
