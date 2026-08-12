@@ -1,19 +1,27 @@
 {
-  "updated": "2026-08-11T06:45:46.808Z",
+  "updated": "2026-08-12T02:14:00.075Z",
   "profileUrl": "https://www.strava.com/athletes/92078275",
   "trainingBlock": {
     "since": "2026-04-26",
-    "miles": 254.8,
-    "runs": 51,
-    "movingHours": 52,
+    "miles": 266.6,
+    "runs": 58,
+    "movingHours": 57,
     "elevationFt": 5755,
     "longestRunMiles": 14.8
   },
   "lifetime": {
-    "miles": 1050,
-    "runs": 244
+    "miles": 1052,
+    "runs": 245
   },
   "recentRuns": [
+    {
+      "name": "Post crash out run",
+      "date": "2026-08-11T21:02:44Z",
+      "miles": 2,
+      "time": "22:47",
+      "pace": "11:16 /mi",
+      "url": "https://www.strava.com/activities/19704801441"
+    },
     {
       "name": "Post Birthday Recovery",
       "date": "2026-08-09T20:27:07Z",
@@ -39,20 +47,12 @@
       "url": "https://www.strava.com/activities/19660405834"
     },
     {
-      "name": "Long Run Part 2: Treadmill Torture",
-      "date": "2026-08-06T03:46:00Z",
-      "miles": 8.9,
-      "time": "1:44:29",
-      "pace": "11:44 /mi",
-      "url": "https://www.strava.com/activities/19627751845"
-    },
-    {
-      "name": "Long run part 1: the shower",
-      "date": "2026-08-05T19:12:18Z",
-      "miles": 9.1,
-      "time": "2:02:35",
-      "pace": "13:27 /mi",
-      "url": "https://www.strava.com/activities/19621459808"
+      "name": "Evening Football (Soccer)",
+      "date": "2026-08-07T19:05:16Z",
+      "miles": 3,
+      "time": "1:13:26",
+      "pace": "24:19 /mi",
+      "url": "https://www.strava.com/activities/19647668274"
     }
   ]
 }
