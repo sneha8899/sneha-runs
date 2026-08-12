@@ -56,9 +56,9 @@ async function api(path, token) {
   return res.json();
 }
 
-function isRun(a) {
+function isRunOrRunningAdjacent(a) {
   const t = a.sport_type || a.type || "";
-  return t === "Run" || t === "TrailRun" || t === "VirtualRun";
+  return t === "Run" || t === "TrailRun" || t === "VirtualRun" || t == "Soccer";
 }
 
 async function main() {
@@ -87,7 +87,7 @@ async function main() {
     const acts = await api(`/athlete/activities?per_page=${perPage}&page=${page}`, token);
     if (!acts.length) break;
     for (const a of acts) {
-      if (!isRun(a)) continue;
+      if (!isRunOrRunningAdjacent(a)) continue;
       // recent list: first 5 runs overall (activities come newest-first)
       if (recent.length < 5) recent.push(a);
       const started = new Date(a.start_date).getTime() / 1000;
