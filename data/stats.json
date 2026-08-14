@@ -1,21 +1,29 @@
 {
-  "updated": "2026-08-13T07:11:01.597Z",
+  "updated": "2026-08-14T07:07:29.905Z",
   "profileUrl": "https://www.strava.com/athletes/92078275",
   "trainingBlock": {
     "since": "2026-04-26",
-    "miles": 270.6,
-    "runs": 59,
-    "movingHours": 58,
-    "elevationFt": 5755,
+    "miles": 278.7,
+    "runs": 60,
+    "movingHours": 59,
+    "elevationFt": 5873,
     "longestRunMiles": 14.8
   },
   "lifetime": {
-    "miles": 1056,
-    "runs": 246
+    "miles": 1064,
+    "runs": 247
   },
   "recentRuns": [
     {
-      "name": "Evening Run",
+      "name": "Evening Workout and Denali Spotting!",
+      "date": "2026-08-13T19:26:15Z",
+      "miles": 8,
+      "time": "1:31:57",
+      "pace": "11:27 /mi",
+      "url": "https://www.strava.com/activities/19732870971"
+    },
+    {
+      "name": "The weather app lied to me",
       "date": "2026-08-12T19:16:45Z",
       "miles": 4,
       "time": "50:38",
@@ -45,14 +53,6 @@
       "time": "37:35",
       "pace": "9:53 /mi",
       "url": "https://www.strava.com/activities/19660810976"
-    },
-    {
-      "name": "Birthday  (Part 1)!",
-      "date": "2026-08-08T17:33:32Z",
-      "miles": 3.3,
-      "time": "36:32",
-      "pace": "11:13 /mi",
-      "url": "https://www.strava.com/activities/19660405834"
     }
   ]
 }
