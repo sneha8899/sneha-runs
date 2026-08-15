@@ -1,11 +1,11 @@
 {
-  "updated": "2026-08-14T07:07:29.905Z",
+  "updated": "2026-08-15T06:19:42.489Z",
   "profileUrl": "https://www.strava.com/athletes/92078275",
   "trainingBlock": {
     "since": "2026-04-26",
-    "miles": 278.7,
-    "runs": 60,
-    "movingHours": 59,
+    "miles": 280.4,
+    "runs": 61,
+    "movingHours": 60,
     "elevationFt": 5873,
     "longestRunMiles": 14.8
   },
@@ -14,6 +14,14 @@
     "runs": 247
   },
   "recentRuns": [
+    {
+      "name": "Evening Football (Soccer)",
+      "date": "2026-08-14T20:01:15Z",
+      "miles": 1.7,
+      "time": "40:07",
+      "pace": "23:12 /mi",
+      "url": "https://www.strava.com/activities/19745643701"
+    },
     {
       "name": "Evening Workout and Denali Spotting!",
       "date": "2026-08-13T19:26:15Z",
@@ -45,14 +53,6 @@
       "time": "34:10",
       "pace": "17:03 /mi",
       "url": "https://www.strava.com/activities/19675387765"
-    },
-    {
-      "name": "Birthday Part 2 (Treadmill Workout)",
-      "date": "2026-08-08T22:36:20Z",
-      "miles": 3.8,
-      "time": "37:35",
-      "pace": "9:53 /mi",
-      "url": "https://www.strava.com/activities/19660810976"
     }
   ]
 }
