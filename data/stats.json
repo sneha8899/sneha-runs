@@ -1,21 +1,37 @@
 {
-  "updated": "2026-08-16T06:21:59.016Z",
+  "updated": "2026-08-17T06:32:40.685Z",
   "profileUrl": "https://www.strava.com/athletes/92078275",
   "trainingBlock": {
     "since": "2026-04-26",
-    "miles": 289.4,
-    "runs": 62,
-    "movingHours": 62,
+    "miles": 299.1,
+    "runs": 64,
+    "movingHours": 64,
     "elevationFt": 6247,
     "longestRunMiles": 14.8
   },
   "lifetime": {
-    "miles": 1073,
-    "runs": 248
+    "miles": 1083,
+    "runs": 250
   },
   "recentRuns": [
     {
-      "name": "Evening Run",
+      "name": "Night Run",
+      "date": "2026-08-16T22:56:28Z",
+      "miles": 1.7,
+      "time": "22:49",
+      "pace": "13:32 /mi",
+      "url": "https://www.strava.com/activities/19774327111"
+    },
+    {
+      "name": "Long Run Part 2",
+      "date": "2026-08-15T21:00:00Z",
+      "miles": 8,
+      "time": "1:30:00",
+      "pace": "11:15 /mi",
+      "url": "https://www.strava.com/activities/19770047601"
+    },
+    {
+      "name": "Long Run Part 1",
       "date": "2026-08-15T18:19:43Z",
       "miles": 9,
       "time": "2:09:51",
@@ -37,22 +53,6 @@
       "time": "1:31:57",
       "pace": "11:27 /mi",
       "url": "https://www.strava.com/activities/19732870971"
-    },
-    {
-      "name": "The weather app lied to me",
-      "date": "2026-08-12T19:16:45Z",
-      "miles": 4,
-      "time": "50:38",
-      "pace": "12:38 /mi",
-      "url": "https://www.strava.com/activities/19720079287"
-    },
-    {
-      "name": "Post crash out run",
-      "date": "2026-08-11T21:02:44Z",
-      "miles": 2,
-      "time": "22:47",
-      "pace": "11:16 /mi",
-      "url": "https://www.strava.com/activities/19704801441"
     }
   ]
 }
