@@ -1,19 +1,27 @@
 {
-  "updated": "2026-08-17T06:32:40.685Z",
+  "updated": "2026-08-18T06:24:24.131Z",
   "profileUrl": "https://www.strava.com/athletes/92078275",
   "trainingBlock": {
     "since": "2026-04-26",
-    "miles": 299.1,
-    "runs": 64,
-    "movingHours": 64,
-    "elevationFt": 6247,
+    "miles": 303.1,
+    "runs": 65,
+    "movingHours": 65,
+    "elevationFt": 6332,
     "longestRunMiles": 14.8
   },
   "lifetime": {
-    "miles": 1083,
-    "runs": 250
+    "miles": 1087,
+    "runs": 251
   },
   "recentRuns": [
+    {
+      "name": "4 mile hair trial",
+      "date": "2026-08-17T19:18:54Z",
+      "miles": 4,
+      "time": "50:43",
+      "pace": "12:39 /mi",
+      "url": "https://www.strava.com/activities/19786799077"
+    },
     {
       "name": "Night Run",
       "date": "2026-08-16T22:56:28Z",
@@ -45,14 +53,6 @@
       "time": "40:07",
       "pace": "23:12 /mi",
       "url": "https://www.strava.com/activities/19745643701"
-    },
-    {
-      "name": "Evening Workout and Denali Spotting!",
-      "date": "2026-08-13T19:26:15Z",
-      "miles": 8,
-      "time": "1:31:57",
-      "pace": "11:27 /mi",
-      "url": "https://www.strava.com/activities/19732870971"
     }
   ]
 }
