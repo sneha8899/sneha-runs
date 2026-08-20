@@ -1,19 +1,27 @@
 {
-  "updated": "2026-08-19T06:24:41.264Z",
+  "updated": "2026-08-20T06:26:15.708Z",
   "profileUrl": "https://www.strava.com/athletes/92078275",
   "trainingBlock": {
     "since": "2026-04-26",
-    "miles": 303.1,
-    "runs": 65,
-    "movingHours": 65,
-    "elevationFt": 6332,
+    "miles": 307.1,
+    "runs": 66,
+    "movingHours": 66,
+    "elevationFt": 6378,
     "longestRunMiles": 14.8
   },
   "lifetime": {
-    "miles": 1087,
-    "runs": 251
+    "miles": 1091,
+    "runs": 252
   },
   "recentRuns": [
+    {
+      "name": "Night Run",
+      "date": "2026-08-19T22:09:11Z",
+      "miles": 4,
+      "time": "46:53",
+      "pace": "11:43 /mi",
+      "url": "https://www.strava.com/activities/19817809323"
+    },
     {
       "name": "4 mile hair trial",
       "date": "2026-08-17T19:18:54Z",
@@ -45,14 +53,6 @@
       "time": "2:09:51",
       "pace": "14:25 /mi",
       "url": "https://www.strava.com/activities/19759483223"
-    },
-    {
-      "name": "Evening Football (Soccer)",
-      "date": "2026-08-14T20:01:15Z",
-      "miles": 1.7,
-      "time": "40:07",
-      "pace": "23:12 /mi",
-      "url": "https://www.strava.com/activities/19745643701"
     }
   ]
 }
