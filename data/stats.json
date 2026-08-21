@@ -1,19 +1,27 @@
 {
-  "updated": "2026-08-20T06:26:15.708Z",
+  "updated": "2026-08-21T06:26:44.265Z",
   "profileUrl": "https://www.strava.com/athletes/92078275",
   "trainingBlock": {
     "since": "2026-04-26",
-    "miles": 307.1,
-    "runs": 66,
-    "movingHours": 66,
-    "elevationFt": 6378,
+    "miles": 315.1,
+    "runs": 67,
+    "movingHours": 67,
+    "elevationFt": 6444,
     "longestRunMiles": 14.8
   },
   "lifetime": {
-    "miles": 1091,
-    "runs": 252
+    "miles": 1099,
+    "runs": 253
   },
   "recentRuns": [
+    {
+      "name": "Evening Run",
+      "date": "2026-08-20T19:36:38Z",
+      "miles": 8,
+      "time": "1:29:45",
+      "pace": "11:13 /mi",
+      "url": "https://www.strava.com/activities/19831238062"
+    },
     {
       "name": "Night Run",
       "date": "2026-08-19T22:09:11Z",
@@ -45,14 +53,6 @@
       "time": "1:30:00",
       "pace": "11:15 /mi",
       "url": "https://www.strava.com/activities/19770047601"
-    },
-    {
-      "name": "Long Run Part 1",
-      "date": "2026-08-15T18:19:43Z",
-      "miles": 9,
-      "time": "2:09:51",
-      "pace": "14:25 /mi",
-      "url": "https://www.strava.com/activities/19759483223"
     }
   ]
 }
