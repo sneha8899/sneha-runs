@@ -1,11 +1,11 @@
 {
-  "updated": "2026-08-21T06:26:44.265Z",
+  "updated": "2026-08-22T06:20:43.050Z",
   "profileUrl": "https://www.strava.com/athletes/92078275",
   "trainingBlock": {
     "since": "2026-04-26",
-    "miles": 315.1,
-    "runs": 67,
-    "movingHours": 67,
+    "miles": 317.6,
+    "runs": 68,
+    "movingHours": 68,
     "elevationFt": 6444,
     "longestRunMiles": 14.8
   },
@@ -15,7 +15,15 @@
   },
   "recentRuns": [
     {
-      "name": "Evening Run",
+      "name": "Soccer double header",
+      "date": "2026-08-21T19:03:28Z",
+      "miles": 2.5,
+      "time": "54:10",
+      "pace": "21:59 /mi",
+      "url": "https://www.strava.com/activities/19843791181"
+    },
+    {
+      "name": "8 mile workout! (First happy cry of the training block 😂)",
       "date": "2026-08-20T19:36:38Z",
       "miles": 8,
       "time": "1:29:45",
@@ -45,14 +53,6 @@
       "time": "22:49",
       "pace": "13:32 /mi",
       "url": "https://www.strava.com/activities/19774327111"
-    },
-    {
-      "name": "Long Run Part 2",
-      "date": "2026-08-15T21:00:00Z",
-      "miles": 8,
-      "time": "1:30:00",
-      "pace": "11:15 /mi",
-      "url": "https://www.strava.com/activities/19770047601"
     }
   ]
 }
