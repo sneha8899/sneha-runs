@@ -1,19 +1,27 @@
 {
-  "updated": "2026-08-25T06:26:35.836Z",
+  "updated": "2026-08-26T06:28:49.708Z",
   "profileUrl": "https://www.strava.com/athletes/92078275",
   "trainingBlock": {
     "since": "2026-04-26",
-    "miles": 335.6,
-    "runs": 69,
-    "movingHours": 72,
-    "elevationFt": 6857,
+    "miles": 339.6,
+    "runs": 70,
+    "movingHours": 73,
+    "elevationFt": 6942,
     "longestRunMiles": 18
   },
   "lifetime": {
-    "miles": 1117,
-    "runs": 254
+    "miles": 1121,
+    "runs": 255
   },
   "recentRuns": [
+    {
+      "name": "Evening Run",
+      "date": "2026-08-25T18:22:06Z",
+      "miles": 4,
+      "time": "49:49",
+      "pace": "12:25 /mi",
+      "url": "https://www.strava.com/activities/19900504216"
+    },
     {
       "name": "Longest outside run of the block! (Also trialed some marathon gear)",
       "date": "2026-08-22T18:04:19Z",
@@ -45,14 +53,6 @@
       "time": "46:53",
       "pace": "11:43 /mi",
       "url": "https://www.strava.com/activities/19817809323"
-    },
-    {
-      "name": "4 mile hair trial",
-      "date": "2026-08-17T19:18:54Z",
-      "miles": 4,
-      "time": "50:43",
-      "pace": "12:39 /mi",
-      "url": "https://www.strava.com/activities/19786799077"
     }
   ]
 }
