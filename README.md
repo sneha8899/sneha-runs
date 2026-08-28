@@ -80,7 +80,7 @@ A race with neither field simply isn't clickable.
 ---
 
 ## Local preview
-No build step. Just serve the folder:
+
 ```bash
 python3 -m http.server 8000
 # then open http://localhost:8000
