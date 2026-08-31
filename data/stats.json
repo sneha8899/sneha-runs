@@ -1,21 +1,29 @@
 {
-  "updated": "2026-08-30T10:53:08.663Z",
+  "updated": "2026-08-31T12:05:37.632Z",
   "profileUrl": "https://www.strava.com/athletes/92078275",
   "trainingBlock": {
     "since": "2026-04-26",
-    "miles": 362.2,
-    "runs": 74,
-    "movingHours": 78,
-    "elevationFt": 7169,
+    "miles": 370.3,
+    "runs": 75,
+    "movingHours": 79,
+    "elevationFt": 7254,
     "longestRunMiles": 18
   },
   "lifetime": {
-    "miles": 1142,
-    "runs": 258
+    "miles": 1150,
+    "runs": 259
   },
   "recentRuns": [
     {
-      "name": "Night Run",
+      "name": "3x1.5 @ Marathon Pace",
+      "date": "2026-08-30T19:24:45Z",
+      "miles": 8,
+      "time": "1:36:04",
+      "pace": "11:59 /mi",
+      "url": "https://www.strava.com/activities/19970399227"
+    },
+    {
+      "name": "Late Night 4 miler",
       "date": "2026-08-29T22:48:41Z",
       "miles": 4,
       "time": "45:43",
@@ -45,14 +53,6 @@
       "time": "2:52:47",
       "pace": "12:20 /mi",
       "url": "https://www.strava.com/activities/19916914216"
-    },
-    {
-      "name": "Evening Run",
-      "date": "2026-08-25T18:22:06Z",
-      "miles": 4,
-      "time": "49:49",
-      "pace": "12:25 /mi",
-      "url": "https://www.strava.com/activities/19900504216"
     }
   ]
 }
