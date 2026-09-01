@@ -14,6 +14,12 @@
     "tiktok": "https://tiktok.com/@sne.srini",
     "strava": "https://www.strava.com/athletes/92078275"
   },
+  "joybox": {
+    "url": "https://rfj-joybox.com/sendjoy?r=ozIdJv78APrfJ10888",
+    "heading": "Fill My JOYBOX 💌",
+    "sub": "Leave me a voice note, video, or message and it lands in my digital JOYBOX! (I won't be able to view/listen to these until I'm in Germany!)",
+    "buttonLabel": "Send me some joy →"
+  },
   "tracking": [
     {
       "race": "BMW Berlin Marathon",

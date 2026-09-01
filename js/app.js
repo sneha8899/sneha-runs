@@ -325,6 +325,25 @@ function renderSocial(social) {
   nav.hidden = !anyShown;
 }
 
+/* ---------- Render: JOYBOX message link ---------- */
+function renderJoybox(joybox) {
+  const section = $("#joybox");
+  if (!section || !joybox) return;
+  const url = joybox.url;
+  const valid = typeof url === "string" && /^https?:\/\//.test(url);
+  if (!valid) return; // stays hidden until a real link is set
+
+  const btn = $("#joybox-btn");
+  const title = $("#joybox-title");
+  const sub = $("#joybox-sub");
+  if (title && joybox.heading) title.textContent = joybox.heading;
+  if (sub && joybox.sub) sub.textContent = joybox.sub;
+  if (btn) {
+    btn.href = url;
+    if (joybox.buttonLabel) btn.textContent = joybox.buttonLabel;
+  }
+  section.hidden = false;
+}
 
 let revealObserver;
 function observeReveals() {
@@ -470,6 +489,7 @@ function escapeHTML(str) {
   renderShoes(shoes);
   renderWishlist(wishlist);
   renderSocial(config.social);
+  renderJoybox(config.joybox);
 
   observeCounts();
   observeReveals();
