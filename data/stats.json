@@ -1,19 +1,27 @@
 {
-  "updated": "2026-08-31T12:05:37.632Z",
+  "updated": "2026-09-01T10:43:38.675Z",
   "profileUrl": "https://www.strava.com/athletes/92078275",
   "trainingBlock": {
     "since": "2026-04-26",
-    "miles": 370.3,
-    "runs": 75,
-    "movingHours": 79,
-    "elevationFt": 7254,
+    "miles": 374.3,
+    "runs": 76,
+    "movingHours": 80,
+    "elevationFt": 7297,
     "longestRunMiles": 18
   },
   "lifetime": {
-    "miles": 1150,
-    "runs": 259
+    "miles": 1154,
+    "runs": 260
   },
   "recentRuns": [
+    {
+      "name": "First run of peak week!",
+      "date": "2026-08-31T19:15:21Z",
+      "miles": 4,
+      "time": "51:52",
+      "pace": "12:56 /mi",
+      "url": "https://www.strava.com/activities/19983219269"
+    },
     {
       "name": "3x1.5 @ Marathon Pace",
       "date": "2026-08-30T19:24:45Z",
@@ -45,14 +53,6 @@
       "time": "47:10",
       "pace": "18:43 /mi",
       "url": "https://www.strava.com/activities/19930504200"
-    },
-    {
-      "name": "Long Progression Run (Failed)",
-      "date": "2026-08-26T18:33:16Z",
-      "miles": 14,
-      "time": "2:52:47",
-      "pace": "12:20 /mi",
-      "url": "https://www.strava.com/activities/19916914216"
     }
   ]
 }
