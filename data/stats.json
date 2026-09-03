@@ -1,19 +1,27 @@
 {
-  "updated": "2026-09-02T10:08:46.745Z",
+  "updated": "2026-09-03T10:20:17.176Z",
   "profileUrl": "https://www.strava.com/athletes/92078275",
   "trainingBlock": {
     "since": "2026-04-26",
-    "miles": 374.3,
-    "runs": 76,
-    "movingHours": 80,
-    "elevationFt": 7297,
+    "miles": 390.3,
+    "runs": 77,
+    "movingHours": 85,
+    "elevationFt": 7421,
     "longestRunMiles": 18
   },
   "lifetime": {
-    "miles": 1154,
-    "runs": 260
+    "miles": 1170,
+    "runs": 261
   },
   "recentRuns": [
+    {
+      "name": "Peak week not quite 20 miles",
+      "date": "2026-09-02T16:59:08Z",
+      "miles": 16.1,
+      "time": "4:20:55",
+      "pace": "16:13 /mi",
+      "url": "https://www.strava.com/activities/20014640806"
+    },
     {
       "name": "First run of peak week!",
       "date": "2026-08-31T19:15:21Z",
@@ -45,14 +53,6 @@
       "time": "48:45",
       "pace": "23:22 /mi",
       "url": "https://www.strava.com/activities/19942087799"
-    },
-    {
-      "name": "Evening Run",
-      "date": "2026-08-27T20:30:25Z",
-      "miles": 2.5,
-      "time": "47:10",
-      "pace": "18:43 /mi",
-      "url": "https://www.strava.com/activities/19930504200"
     }
   ]
 }
