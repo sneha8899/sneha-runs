@@ -1,19 +1,35 @@
 {
-  "updated": "2026-09-04T10:07:34.110Z",
+  "updated": "2026-09-05T09:37:13.592Z",
   "profileUrl": "https://www.strava.com/athletes/92078275",
   "trainingBlock": {
     "since": "2026-04-26",
-    "miles": 390.3,
-    "runs": 77,
-    "movingHours": 85,
-    "elevationFt": 7421,
+    "miles": 394.4,
+    "runs": 79,
+    "movingHours": 86,
+    "elevationFt": 7434,
     "longestRunMiles": 18
   },
   "lifetime": {
-    "miles": 1170,
-    "runs": 261
+    "miles": 1172,
+    "runs": 262
   },
   "recentRuns": [
+    {
+      "name": "Post soccer run 1 walk 1",
+      "date": "2026-09-04T20:32:42Z",
+      "miles": 2,
+      "time": "39:57",
+      "pace": "19:57 /mi",
+      "url": "https://www.strava.com/activities/20041121966"
+    },
+    {
+      "name": "Evening Football (Soccer)",
+      "date": "2026-09-04T19:02:21Z",
+      "miles": 2,
+      "time": "50:12",
+      "pace": "25:01 /mi",
+      "url": "https://www.strava.com/activities/20041121837"
+    },
     {
       "name": "Peak week not quite 20 miles",
       "date": "2026-09-02T16:59:08Z",
@@ -37,22 +53,6 @@
       "time": "1:36:04",
       "pace": "11:59 /mi",
       "url": "https://www.strava.com/activities/19970399227"
-    },
-    {
-      "name": "Late Night 4 miler",
-      "date": "2026-08-29T22:48:41Z",
-      "miles": 4,
-      "time": "45:43",
-      "pace": "11:19 /mi",
-      "url": "https://www.strava.com/activities/19957194052"
-    },
-    {
-      "name": "Evening Football (Soccer)",
-      "date": "2026-08-28T19:03:43Z",
-      "miles": 2.1,
-      "time": "48:45",
-      "pace": "23:22 /mi",
-      "url": "https://www.strava.com/activities/19942087799"
     }
   ]
 }
