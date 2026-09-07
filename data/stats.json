@@ -1,19 +1,27 @@
 {
-  "updated": "2026-09-06T09:52:52.807Z",
+  "updated": "2026-09-07T10:59:05.582Z",
   "profileUrl": "https://www.strava.com/athletes/92078275",
   "trainingBlock": {
     "since": "2026-04-26",
-    "miles": 398.4,
-    "runs": 80,
-    "movingHours": 87,
-    "elevationFt": 7556,
+    "miles": 404.5,
+    "runs": 81,
+    "movingHours": 88,
+    "elevationFt": 7723,
     "longestRunMiles": 18
   },
   "lifetime": {
-    "miles": 1176,
-    "runs": 263
+    "miles": 1182,
+    "runs": 264
   },
   "recentRuns": [
+    {
+      "name": "Last Run of Peak Week",
+      "date": "2026-09-06T12:13:58Z",
+      "miles": 6.1,
+      "time": "1:08:28",
+      "pace": "11:11 /mi",
+      "url": "https://www.strava.com/activities/20064901993"
+    },
     {
       "name": "4 miles finally at a normal temperature 😭",
       "date": "2026-09-05T18:41:53Z",
@@ -45,14 +53,6 @@
       "time": "4:20:55",
       "pace": "16:13 /mi",
       "url": "https://www.strava.com/activities/20014640806"
-    },
-    {
-      "name": "First run of peak week!",
-      "date": "2026-08-31T19:15:21Z",
-      "miles": 4,
-      "time": "51:52",
-      "pace": "12:56 /mi",
-      "url": "https://www.strava.com/activities/19983219269"
     }
   ]
 }
