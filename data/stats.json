@@ -1,19 +1,27 @@
 {
-  "updated": "2026-09-08T10:15:06.695Z",
+  "updated": "2026-09-09T10:20:23.213Z",
   "profileUrl": "https://www.strava.com/athletes/92078275",
   "trainingBlock": {
     "since": "2026-04-26",
-    "miles": 404.5,
-    "runs": 81,
-    "movingHours": 88,
-    "elevationFt": 7723,
+    "miles": 407.5,
+    "runs": 82,
+    "movingHours": 89,
+    "elevationFt": 7743,
     "longestRunMiles": 18
   },
   "lifetime": {
-    "miles": 1182,
-    "runs": 264
+    "miles": 1185,
+    "runs": 265
   },
   "recentRuns": [
+    {
+      "name": "Got catcalled more times than miles I ran",
+      "date": "2026-09-08T18:44:03Z",
+      "miles": 3,
+      "time": "37:55",
+      "pace": "12:37 /mi",
+      "url": "https://www.strava.com/activities/20097559472"
+    },
     {
       "name": "Last Run of Peak Week",
       "date": "2026-09-06T12:13:58Z",
@@ -45,14 +53,6 @@
       "time": "50:12",
       "pace": "25:01 /mi",
       "url": "https://www.strava.com/activities/20041121837"
-    },
-    {
-      "name": "Peak week not quite 20 miles",
-      "date": "2026-09-02T16:59:08Z",
-      "miles": 16.1,
-      "time": "4:20:55",
-      "pace": "16:13 /mi",
-      "url": "https://www.strava.com/activities/20014640806"
     }
   ]
 }
