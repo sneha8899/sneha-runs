@@ -1,19 +1,27 @@
 {
-  "updated": "2026-09-09T10:20:23.213Z",
+  "updated": "2026-09-10T10:13:12.966Z",
   "profileUrl": "https://www.strava.com/athletes/92078275",
   "trainingBlock": {
     "since": "2026-04-26",
-    "miles": 407.5,
-    "runs": 82,
-    "movingHours": 89,
-    "elevationFt": 7743,
+    "miles": 415.4,
+    "runs": 83,
+    "movingHours": 90,
+    "elevationFt": 7815,
     "longestRunMiles": 18
   },
   "lifetime": {
-    "miles": 1185,
-    "runs": 265
+    "miles": 1193,
+    "runs": 266
   },
   "recentRuns": [
+    {
+      "name": "5 mile workout",
+      "date": "2026-09-09T19:08:43Z",
+      "miles": 7.9,
+      "time": "1:29:15",
+      "pace": "11:17 /mi",
+      "url": "https://www.strava.com/activities/20110554971"
+    },
     {
       "name": "Got catcalled more times than miles I ran",
       "date": "2026-09-08T18:44:03Z",
@@ -45,14 +53,6 @@
       "time": "39:57",
       "pace": "19:57 /mi",
       "url": "https://www.strava.com/activities/20041121966"
-    },
-    {
-      "name": "Evening Football (Soccer)",
-      "date": "2026-09-04T19:02:21Z",
-      "miles": 2,
-      "time": "50:12",
-      "pace": "25:01 /mi",
-      "url": "https://www.strava.com/activities/20041121837"
     }
   ]
 }
