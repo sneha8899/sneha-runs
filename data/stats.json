@@ -1,19 +1,27 @@
 {
-  "updated": "2026-09-12T09:44:52.859Z",
+  "updated": "2026-09-13T10:46:22.139Z",
   "profileUrl": "https://www.strava.com/athletes/92078275",
   "trainingBlock": {
     "since": "2026-04-26",
-    "miles": 417,
-    "runs": 84,
-    "movingHours": 91,
-    "elevationFt": 7815,
+    "miles": 420,
+    "runs": 85,
+    "movingHours": 92,
+    "elevationFt": 7874,
     "longestRunMiles": 18
   },
   "lifetime": {
-    "miles": 1193,
-    "runs": 266
+    "miles": 1196,
+    "runs": 267
   },
   "recentRuns": [
+    {
+      "name": "Easy 3 miles (somehow I only run when it’s baking outside)",
+      "date": "2026-09-12T16:07:54Z",
+      "miles": 3,
+      "time": "38:34",
+      "pace": "12:49 /mi",
+      "url": "https://www.strava.com/activities/20149312421"
+    },
     {
       "name": "Evening Football (Soccer)",
       "date": "2026-09-11T20:02:23Z",
@@ -45,14 +53,6 @@
       "time": "1:08:28",
       "pace": "11:11 /mi",
       "url": "https://www.strava.com/activities/20064901993"
-    },
-    {
-      "name": "4 miles finally at a normal temperature 😭",
-      "date": "2026-09-05T18:41:53Z",
-      "miles": 4,
-      "time": "51:18",
-      "pace": "12:48 /mi",
-      "url": "https://www.strava.com/activities/20053370595"
     }
   ]
 }
