@@ -1,19 +1,27 @@
 {
-  "updated": "2026-09-14T11:11:46.615Z",
+  "updated": "2026-09-15T10:39:09.592Z",
   "profileUrl": "https://www.strava.com/athletes/92078275",
   "trainingBlock": {
     "since": "2026-04-26",
-    "miles": 433.7,
-    "runs": 86,
-    "movingHours": 95,
-    "elevationFt": 8123,
+    "miles": 436.7,
+    "runs": 87,
+    "movingHours": 96,
+    "elevationFt": 8173,
     "longestRunMiles": 18
   },
   "lifetime": {
-    "miles": 1209,
-    "runs": 268
+    "miles": 1212,
+    "runs": 269
   },
   "recentRuns": [
+    {
+      "name": "3 miles easy and fun",
+      "date": "2026-09-14T18:56:17Z",
+      "miles": 3,
+      "time": "38:00",
+      "pace": "12:38 /mi",
+      "url": "https://www.strava.com/activities/20177858509"
+    },
     {
       "name": "Long Run Chaos Part ???: stung by a bee",
       "date": "2026-09-13T11:16:56Z",
@@ -45,14 +53,6 @@
       "time": "1:29:15",
       "pace": "11:17 /mi",
       "url": "https://www.strava.com/activities/20110554971"
-    },
-    {
-      "name": "Got catcalled more times than miles I ran",
-      "date": "2026-09-08T18:44:03Z",
-      "miles": 3,
-      "time": "37:55",
-      "pace": "12:37 /mi",
-      "url": "https://www.strava.com/activities/20097559472"
     }
   ]
 }
