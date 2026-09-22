@@ -1,19 +1,27 @@
 {
-  "updated": "2026-09-21T11:22:42.732Z",
+  "updated": "2026-09-22T10:32:00.730Z",
   "profileUrl": "https://www.strava.com/athletes/92078275",
   "trainingBlock": {
     "since": "2026-04-26",
-    "miles": 461.2,
-    "runs": 91,
-    "movingHours": 101,
-    "elevationFt": 8438,
+    "miles": 466.3,
+    "runs": 92,
+    "movingHours": 102,
+    "elevationFt": 8507,
     "longestRunMiles": 18
   },
   "lifetime": {
-    "miles": 1235,
-    "runs": 272
+    "miles": 1240,
+    "runs": 273
   },
   "recentRuns": [
+    {
+      "name": "FIRST RUN OF RACE WEEK",
+      "date": "2026-09-21T20:30:41Z",
+      "miles": 5,
+      "time": "1:03:32",
+      "pace": "12:41 /mi",
+      "url": "https://www.strava.com/activities/20275656994"
+    },
     {
       "name": "Dress Rehearsal!",
       "date": "2026-09-20T19:28:43Z",
@@ -45,14 +53,6 @@
       "time": "1:29:18",
       "pace": "12:44 /mi",
       "url": "https://www.strava.com/activities/20207847183"
-    },
-    {
-      "name": "3 miles easy and fun",
-      "date": "2026-09-14T18:56:17Z",
-      "miles": 3,
-      "time": "38:00",
-      "pace": "12:38 /mi",
-      "url": "https://www.strava.com/activities/20177858509"
     }
   ]
 }
