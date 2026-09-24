@@ -365,10 +365,23 @@ a:hover { text-decoration: underline; }
   padding: 1.6rem 1.5rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
   gap: 0.85rem;
 }
-.track-card--live { border-color: rgba(0,194,224,0.5); }
-.track-card__top { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.track-card--live {
+  border-color: var(--accent);
+  background: linear-gradient(135deg, rgba(0,194,224,0.20), rgba(0,194,224,0.03)), var(--card);
+  box-shadow: 0 0 0 1px rgba(0,194,224,0.5), 0 0 34px rgba(0,194,224,0.28);
+  animation: liveGlow 2.4s ease-in-out infinite;
+}
+@keyframes liveGlow {
+  0%, 100% { box-shadow: 0 0 0 1px rgba(0,194,224,0.4), 0 0 22px rgba(0,194,224,0.16); }
+  50%      { box-shadow: 0 0 0 1px rgba(0,194,224,0.75), 0 0 46px rgba(0,194,224,0.45); }
+}
+.track-card--live .track-pill--live { box-shadow: 0 0 16px rgba(0,194,224,0.65); }
+.track-card--live .track-btn { box-shadow: 0 0 22px rgba(0,194,224,0.5); }
+.track-card__top { display: flex; flex-direction: column; align-items: center; gap: 0.5rem; }
 .track-card__race { font-family: var(--cond); font-weight: 700; font-size: 1.7rem; line-height: 1.05; }
 .track-card__date { color: var(--muted); font-size: 0.85rem; margin-top: 0.15rem; }
 .track-pill {
@@ -389,12 +402,12 @@ a:hover { text-decoration: underline; }
   animation: pulse 1.4s ease-in-out infinite;
 }
 @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.3; } }
-.track-card__note { color: var(--muted); font-size: 0.9rem; line-height: 1.55; }
+.track-card__note { color: var(--muted); font-size: 0.9rem; line-height: 1.55; white-space: pre-line; }
 .track-card__bib { font-family: var(--cond); font-size: 0.95rem; color: var(--text); }
 .track-card__bib b { color: var(--accent-2); font-size: 1.15rem; }
 .track-btn {
   display: inline-flex; align-items: center; gap: 0.5rem;
-  align-self: flex-start;
+  align-self: center;
   background: var(--accent);
   color: #04222a;
   font-family: var(--cond);
