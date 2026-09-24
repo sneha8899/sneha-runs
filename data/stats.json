@@ -1,19 +1,27 @@
 {
-  "updated": "2026-09-23T10:26:15.817Z",
+  "updated": "2026-09-24T10:42:55.087Z",
   "profileUrl": "https://www.strava.com/athletes/92078275",
   "trainingBlock": {
     "since": "2026-04-26",
-    "miles": 466.3,
-    "runs": 92,
-    "movingHours": 102,
-    "elevationFt": 8507,
+    "miles": 472.3,
+    "runs": 93,
+    "movingHours": 104,
+    "elevationFt": 8566,
     "longestRunMiles": 18
   },
   "lifetime": {
-    "miles": 1240,
-    "runs": 273
+    "miles": 1246,
+    "runs": 274
   },
   "recentRuns": [
+    {
+      "name": "You can take the girl out of Seneca park…",
+      "date": "2026-09-23T18:10:23Z",
+      "miles": 6,
+      "time": "1:08:45",
+      "pace": "11:27 /mi",
+      "url": "https://www.strava.com/activities/20303792126"
+    },
     {
       "name": "FIRST RUN OF RACE WEEK",
       "date": "2026-09-21T20:30:41Z",
@@ -45,14 +53,6 @@
       "time": "38:12",
       "pace": "19:38 /mi",
       "url": "https://www.strava.com/activities/20233852368"
-    },
-    {
-      "name": "7 mile workout",
-      "date": "2026-09-16T19:13:20Z",
-      "miles": 7,
-      "time": "1:29:18",
-      "pace": "12:44 /mi",
-      "url": "https://www.strava.com/activities/20207847183"
     }
   ]
 }
