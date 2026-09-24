@@ -3,11 +3,11 @@
   "raceName": "BMW Berlin Marathon",
   "raceShortName": "Berlin",
   "raceCity": "Berlin, Germany",
-  "raceDate": "2026-09-27T09:15:00+02:00",
+  "raceDate": "2026-09-27T10:27:00+02:00",
   "trainingBlockStart": "2026-04-26",
   "trainingBlockLabel": "Berlin Build",
   "goalMiles": 400,
-  "cries": 10,
+  "cries": 15,
   "tagline": "26.2 through the streets of Berlin.",
   "social": {
     "instagram": "https://instagram.com/sneharunsamarathon",
@@ -24,11 +24,12 @@
     {
       "race": "BMW Berlin Marathon",
       "date": "2026-09-27",
-      "provider": "Official BMW Berlin Marathon app",
-      "available": false,
-      "bib": "",
-      "url": "",
-      "note": "Live GPS tracking goes live on race morning. Will share my bib number and the follow link as soon as I know!"
+      "liveFrom": "2026-09-27T00:00:00+02:00",
+      "provider": "Official web tracker + BMW Berlin Marathon app",
+      "available": "auto",
+      "bib": "79389",
+      "url": "https://berlin.r.mikatiming.com/2026/?pid=tracking&pidp=tracking",
+      "note": "Follow me live in your browser (no app needed) — just search my name, Sneha Srinivasan, to add me as a favorite. Prefer the app? Grab \"BMW BERLIN-MARATHON 2026\" from the App Store or Google Play."
     }
   ]
 }

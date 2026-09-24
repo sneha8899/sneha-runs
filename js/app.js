@@ -168,7 +168,17 @@ function renderTracking(tracking) {
   wrap.innerHTML = "";
 
   tracking.forEach((t) => {
-    const live = !!t.available && !!t.url;
+    const hasUrl = typeof t.url === "string" && t.url.trim() !== "";
+    // "available" can be true, false, or "auto". With "auto", the card flips to
+    // Live by itself at a fixed moment, so it needs no manual update on race
+    // morning. Prefer `liveFrom` (an ISO timestamp WITH a timezone offset, e.g.
+    // midnight in the race's own timezone) so the flip happens at the same instant
+    // for every viewer worldwide; fall back to the date at the viewer's local midnight.
+    const liveThreshold = t.liveFrom
+      ? new Date(t.liveFrom).getTime()
+      : (t.date ? parseDate(t.date).getTime() : NaN);
+    const autoLive = Number.isFinite(liveThreshold) && Date.now() >= liveThreshold;
+    const live = hasUrl && (t.available === true || (t.available === "auto" && autoLive));
     const dateStr = t.date
       ? parseDate(t.date).toLocaleDateString(undefined, { month: "long", day: "numeric", year: "numeric" })
       : "";
@@ -179,8 +189,10 @@ function renderTracking(tracking) {
       ? `<div class="track-card__bib">Bib <b>#${escapeHTML(String(t.bib))}</b></div>`
       : "";
 
-    const action = live
-      ? `<a class="track-btn" href="${encodeURI(t.url)}" target="_blank" rel="noopener">📡 Track me live →</a>`
+    // Show the tracker button whenever a link exists so people can bookmark it
+    // ahead of time; the "live" state only changes the pill + button wording.
+    const action = hasUrl
+      ? `<a class="track-btn" href="${encodeURI(t.url)}" target="_blank" rel="noopener">${live ? "📡 Track me live →" : "🔗 Open the live tracker →"}</a>`
       : "";
 
     card.innerHTML = `
