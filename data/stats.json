@@ -1,19 +1,27 @@
 {
-  "updated": "2026-09-24T10:42:55.087Z",
+  "updated": "2026-09-25T10:46:24.047Z",
   "profileUrl": "https://www.strava.com/athletes/92078275",
   "trainingBlock": {
     "since": "2026-04-26",
-    "miles": 472.3,
-    "runs": 93,
+    "miles": 476,
+    "runs": 94,
     "movingHours": 104,
-    "elevationFt": 8566,
+    "elevationFt": 8835,
     "longestRunMiles": 18
   },
   "lifetime": {
-    "miles": 1246,
-    "runs": 274
+    "miles": 1250,
+    "runs": 275
   },
   "recentRuns": [
+    {
+      "name": "Last run before Germany!",
+      "date": "2026-09-24T12:41:40Z",
+      "miles": 3.8,
+      "time": "50:18",
+      "pace": "13:24 /mi",
+      "url": "https://www.strava.com/activities/20314745333"
+    },
     {
       "name": "You can take the girl out of Seneca park…",
       "date": "2026-09-23T18:10:23Z",
@@ -45,14 +53,6 @@
       "time": "48:59",
       "pace": "12:14 /mi",
       "url": "https://www.strava.com/activities/20261353735"
-    },
-    {
-      "name": "Evening Football (Soccer)",
-      "date": "2026-09-18T20:03:51Z",
-      "miles": 1.9,
-      "time": "38:12",
-      "pace": "19:38 /mi",
-      "url": "https://www.strava.com/activities/20233852368"
     }
   ]
 }
