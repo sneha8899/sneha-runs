@@ -1,19 +1,27 @@
 {
-  "updated": "2026-09-25T10:46:24.047Z",
+  "updated": "2026-09-26T10:28:46.597Z",
   "profileUrl": "https://www.strava.com/athletes/92078275",
   "trainingBlock": {
     "since": "2026-04-26",
-    "miles": 476,
-    "runs": 94,
-    "movingHours": 104,
-    "elevationFt": 8835,
+    "miles": 479.2,
+    "runs": 95,
+    "movingHours": 105,
+    "elevationFt": 8845,
     "longestRunMiles": 18
   },
   "lifetime": {
-    "miles": 1250,
-    "runs": 275
+    "miles": 1253,
+    "runs": 276
   },
   "recentRuns": [
+    {
+      "name": "Morning Run",
+      "date": "2026-09-26T10:04:36Z",
+      "miles": 3.2,
+      "time": "36:37",
+      "pace": "11:31 /mi",
+      "url": "https://www.strava.com/activities/20334421965"
+    },
     {
       "name": "Last run before Germany!",
       "date": "2026-09-24T12:41:40Z",
@@ -45,14 +53,6 @@
       "time": "2:49:12",
       "pace": "14:35 /mi",
       "url": "https://www.strava.com/activities/20262402412"
-    },
-    {
-      "name": "Evening Run",
-      "date": "2026-09-19T20:12:54Z",
-      "miles": 4,
-      "time": "48:59",
-      "pace": "12:14 /mi",
-      "url": "https://www.strava.com/activities/20261353735"
     }
   ]
 }
