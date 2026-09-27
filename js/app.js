@@ -22,25 +22,29 @@ function startCountdown(raceISO, caption) {
   };
   const capEl = $("#countdown-caption");
 
-  function tick() {
-    const diff = target - Date.now();
-    if (diff <= 0) {
-      els.days.textContent = els.hours.textContent = els.mins.textContent = els.secs.textContent = "00";
-      if (capEl) capEl.textContent = "RACE DAY IS HERE 🎉";
-      clearInterval(timer);
-      return;
+  const diff = target - Date.now();
+
+  if (diff <= 0) {
+    els.days.textContent = els.hours.textContent = els.mins.textContent = els.secs.textContent = "00";
+    if (capEl) capEl.textContent = "RACE DAY IS HERE 🎉";
+    return;
+  } else {
+    function tick() {
+      const diff = target - Date.now();
+
+      const d = Math.floor(diff / 864e5);
+      const h = Math.floor((diff % 864e5) / 36e5);
+      const m = Math.floor((diff % 36e5) / 6e4);
+      const s = Math.floor((diff % 6e4) / 1e3);
+      els.days.textContent = String(d);
+      els.hours.textContent = String(h).padStart(2, "0");
+      els.mins.textContent = String(m).padStart(2, "0");
+      els.secs.textContent = String(s).padStart(2, "0");
     }
-    const d = Math.floor(diff / 864e5);
-    const h = Math.floor((diff % 864e5) / 36e5);
-    const m = Math.floor((diff % 36e5) / 6e4);
-    const s = Math.floor((diff % 6e4) / 1e3);
-    els.days.textContent = String(d);
-    els.hours.textContent = String(h).padStart(2, "0");
-    els.mins.textContent = String(m).padStart(2, "0");
-    els.secs.textContent = String(s).padStart(2, "0");
+    tick();
+    const timer = setInterval(tick, 1000);
   }
-  tick();
-  const timer = setInterval(tick, 1000);
+
   if (caption && capEl) capEl.textContent = caption;
 }
 
@@ -268,7 +272,7 @@ function renderShoes(shoes) {
   if (!shoes || !shoes.length) return;
   wrap.innerHTML = "";
   shoes.forEach((s) => {
-    const miles = Number(s.miles) ?  Number(s.miles) : null;
+    const miles = Number(s.miles) ? Number(s.miles) : null;
     const life = 400;
     const pct = Math.min((miles / life) * 100, 100);
     const el = document.createElement("div");
