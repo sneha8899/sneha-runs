@@ -1,19 +1,27 @@
 {
-  "updated": "2026-09-30T11:32:33.726Z",
+  "updated": "2026-10-01T12:01:12.020Z",
   "profileUrl": "https://www.strava.com/athletes/92078275",
   "trainingBlock": {
     "since": "2026-04-26",
-    "miles": 505.8,
-    "runs": 96,
-    "movingHours": 110,
-    "elevationFt": 9121,
+    "miles": 508.7,
+    "runs": 97,
+    "movingHours": 111,
+    "elevationFt": 9278,
     "longestRunMiles": 26.6
   },
   "lifetime": {
-    "miles": 1280,
-    "runs": 277
+    "miles": 1282,
+    "runs": 278
   },
   "recentRuns": [
+    {
+      "name": "Morning Explore in Prague",
+      "date": "2026-09-30T08:11:05Z",
+      "miles": 2.9,
+      "time": "46:14",
+      "pace": "15:58 /mi",
+      "url": "https://www.strava.com/activities/20397663181"
+    },
     {
       "name": "⭐️",
       "date": "2026-09-27T10:37:12Z",
@@ -45,14 +53,6 @@
       "time": "1:08:45",
       "pace": "11:27 /mi",
       "url": "https://www.strava.com/activities/20303792126"
-    },
-    {
-      "name": "FIRST RUN OF RACE WEEK",
-      "date": "2026-09-21T20:30:41Z",
-      "miles": 5,
-      "time": "1:03:32",
-      "pace": "12:41 /mi",
-      "url": "https://www.strava.com/activities/20275656994"
     }
   ]
 }
