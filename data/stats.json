@@ -1,11 +1,11 @@
 {
-  "updated": "2026-10-09T12:15:13.228Z",
+  "updated": "2026-10-10T11:32:54.699Z",
   "profileUrl": "https://www.strava.com/athletes/92078275",
   "trainingBlock": {
     "since": "2026-04-26",
-    "miles": 508.7,
-    "runs": 97,
-    "movingHours": 111,
+    "miles": 512.8,
+    "runs": 98,
+    "movingHours": 113,
     "elevationFt": 9278,
     "longestRunMiles": 26.6
   },
@@ -14,6 +14,14 @@
     "runs": 278
   },
   "recentRuns": [
+    {
+      "name": "Evening Football (Soccer)",
+      "date": "2026-10-09T19:02:00Z",
+      "miles": 4.1,
+      "time": "1:36:17",
+      "pace": "23:24 /mi",
+      "url": "https://www.strava.com/activities/20521580933"
+    },
     {
       "name": "Morning Explore in Prague",
       "date": "2026-09-30T08:11:05Z",
@@ -45,14 +53,6 @@
       "time": "50:18",
       "pace": "13:24 /mi",
       "url": "https://www.strava.com/activities/20314745333"
-    },
-    {
-      "name": "You can take the girl out of Seneca park…",
-      "date": "2026-09-23T18:10:23Z",
-      "miles": 6,
-      "time": "1:08:45",
-      "pace": "11:27 /mi",
-      "url": "https://www.strava.com/activities/20303792126"
     }
   ]
 }
