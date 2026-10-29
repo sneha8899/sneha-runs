@@ -1,19 +1,27 @@
 {
-  "updated": "2026-10-28T11:48:08.413Z",
+  "updated": "2026-10-29T11:56:02.095Z",
   "profileUrl": "https://www.strava.com/athletes/92078275",
   "trainingBlock": {
     "since": "2026-04-26",
-    "miles": 518.5,
-    "runs": 101,
+    "miles": 521.6,
+    "runs": 102,
     "movingHours": 115,
-    "elevationFt": 9291,
+    "elevationFt": 9298,
     "longestRunMiles": 26.6
   },
   "lifetime": {
-    "miles": 1284,
-    "runs": 279
+    "miles": 1287,
+    "runs": 280
   },
   "recentRuns": [
+    {
+      "name": "Evening Run",
+      "date": "2026-10-28T19:08:53Z",
+      "miles": 3.1,
+      "time": "34:45",
+      "pace": "11:12 /mi",
+      "url": "https://www.strava.com/activities/20772235068"
+    },
     {
       "name": "Evening Football (Soccer)",
       "date": "2026-10-23T20:04:29Z",
@@ -45,14 +53,6 @@
       "time": "1:36:17",
       "pace": "23:24 /mi",
       "url": "https://www.strava.com/activities/20521580933"
-    },
-    {
-      "name": "Morning Explore in Prague",
-      "date": "2026-09-30T08:11:05Z",
-      "miles": 2.9,
-      "time": "46:14",
-      "pace": "15:58 /mi",
-      "url": "https://www.strava.com/activities/20397663181"
     }
   ]
 }
