@@ -1,19 +1,27 @@
 {
-  "updated": "2026-11-18T14:45:34.987Z",
+  "updated": "2026-11-19T14:52:46.931Z",
   "profileUrl": "https://www.strava.com/athletes/92078275",
   "trainingBlock": {
     "since": "2026-04-26",
-    "miles": 523.6,
-    "runs": 103,
+    "miles": 525.2,
+    "runs": 104,
     "movingHours": 116,
-    "elevationFt": 9298,
+    "elevationFt": 9331,
     "longestRunMiles": 26.6
   },
   "lifetime": {
-    "miles": 1287,
-    "runs": 280
+    "miles": 1289,
+    "runs": 281
   },
   "recentRuns": [
+    {
+      "name": "Evening Run",
+      "date": "2026-11-18T18:58:52Z",
+      "miles": 1.7,
+      "time": "17:59",
+      "pace": "10:47 /mi",
+      "url": "https://www.strava.com/activities/21041308086"
+    },
     {
       "name": "Evening Football (Soccer)",
       "date": "2026-11-13T19:53:57Z",
@@ -45,14 +53,6 @@
       "time": "16:32",
       "pace": "11:39 /mi",
       "url": "https://www.strava.com/activities/20681445748"
-    },
-    {
-      "name": "Evening Football (Soccer)",
-      "date": "2026-10-12T18:06:07Z",
-      "miles": 2.2,
-      "time": "57:36",
-      "pace": "26:35 /mi",
-      "url": "https://www.strava.com/activities/20560884772"
     }
   ]
 }
